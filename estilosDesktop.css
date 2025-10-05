@@ -1,0 +1,166 @@
+/* === Estilos Generales y Layout para Desktop === */
+
+/* Variables de color para fácil mantenimiento */
+:root {
+    --color-principal: #523A34; /* Marrón oscuro para textos */
+    --color-acento: #B87D4B;    /* Cobre para enlaces y botones */
+    --color-fondo: #FFFCF5;     /* Un fondo crema muy claro */
+    --fuente-principal: Arial, Helvetica, sans-serif;
+}
+
+/* Estilos base para todo el documento */
+body {
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo);
+    color: var(--color-principal);
+    margin: 0;
+    padding: 20;
+    line-height: 1.6;
+}
+
+/* Contenedor principal para centrar el contenido */
+main {
+    max-width: 960px;
+    margin: 20px auto;
+    padding: 5px 40px; /* Más padding horizontal */
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* --- Tipografía --- */
+h1, h2, h3 {
+    color: var(--color-principal);
+    border-bottom: 2px solid var(--color-acento);
+    padding-bottom: 5px;
+    margin-top: 1.5em;
+}
+
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; }
+
+a {
+    color: var(--color-acento);
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    margin: 40px 0;
+}
+
+/* --- Estilos para Imágenes y Videos --- */
+img, video {
+    max-width: 100%;
+    height: auto;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* --- Estilos para Tablas --- */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+th {
+    background-color: var(--color-principal);
+    color: white;
+}
+
+/* 
+============================================
+=== SECCIÓN DE ESTILOS PARA FORMULARIOS ===
+============================================
+*/
+
+/* Contenedor de cada campo (label + input) */
+.campo-formulario {
+    margin-bottom: 20px; /* Espacio entre cada campo */
+}
+
+/* Estilo para las etiquetas */
+.campo-formulario label {
+    display: block; /* La etiqueta ocupa su propia línea */
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Estilo para los campos de texto, fecha, etc. */
+.campo-formulario input[type="text"],
+.campo-formulario input[type="tel"],
+.campo-formulario input[type="date"],
+.campo-formulario textarea {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    box-sizing: border-box; /* Importante para que el padding no desborde el ancho */
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Efecto visual cuando se hace clic en un campo */
+.campo-formulario input:focus,
+.campo-formulario textarea:focus {
+    border-color: var(--color-acento);
+    box-shadow: 0 0 5px rgba(184, 125, 75, 0.5);
+    outline: none; /* Quitamos el borde por defecto del navegador */
+}
+
+/* Estilos para el grupo de radio buttons */
+.campo-formulario fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+}
+
+.campo-formulario legend {
+    font-weight: bold;
+    padding: 0 10px;
+}
+
+/* Estilo para cada opción de radio */
+.opcion-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.opcion-radio label {
+    font-weight: normal; /* El texto de la opción no es negrita */
+    margin-left: 10px;
+    margin-bottom: 0;
+}
+
+/* Estilo del botón de envío */
+.campo-formulario button[type="submit"] {
+    background-color: var(--color-acento);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto al pasar el cursor sobre el botón */
+.campo-formulario button[type="submit"]:hover {
+    background-color: #a56f3a; /* Un tono más oscuro */
+    transform: translateY(-2px); /* Un leve efecto de "levantamiento" */
+}
