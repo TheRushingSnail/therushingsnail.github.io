@@ -3,95 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Currículo</title>
+    
 
-<main>
-    <section>
-        <!-- Título solicitado en heading 2 -->
-        <h2>Datos Generales</h2>
+    <link rel="stylesheet" href="Estilos/estilosDesktop.css">
+    <link rel="stylesheet" href="Estilos/encabezado.css">
+    <link rel="stylesheet" href="Estilos/piedepagina.css">
+</head>
+<body>
 
-        <!-- Formulario con los campos solicitados -->
-        <form action="#" method="post">
-            <!-- Nombre -->
-            <div>
+    <header>
+        <h1>Proyecto de Ingeniería Web</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="MiBiografía_FAtencio.html">Biografía F. Atencio</a></li>
+                <li><a href="MiBiografía_WRush.html">Biografía W. Rush</a></li>
+                <li><a href="Sitios_Turísticos.html">Sitios Turísticos</a></li>
+                <li><a href="Curriculo.html">Currículo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Formulario de Datos Generales</h2>
+        
+        <form action="#" method="post" class="formulario-datos">
+            <div class="campo-formulario">
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" required>
             </div>
-            <br>
-            <!-- Apellido -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" required>
             </div>
-            <br>
-            <!-- Cédula -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="cedula">Cédula:</label>
                 <input type="text" id="cedula" name="cedula" required>
             </div>
-            <br>
-            <!-- Teléfono -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono">
             </div>
-            <br>
-            <!-- Fecha de Nacimiento -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="fecha_nacimiento">Fecha de nacimiento:</label>
                 <input type="date" id="fecha_nacimiento" name="fecha_nacimiento">
             </div>
-            <br>
-            <!-- Sexo usando radio buttons para una única selección -->
-            <fieldset>
+            
+            <fieldset class="campo-formulario">
                 <legend>Sexo:</legend>
-                <div>
+                <div class="opcion-radio">
                     <input type="radio" id="sexo_masculino" name="sexo" value="masculino">
                     <label for="sexo_masculino">Masculino</label>
                 </div>
-                <div>
+                <div class="opcion-radio">
                     <input type="radio" id="sexo_femenino" name="sexo" value="femenino">
                     <label for="sexo_femenino">Femenino</label>
                 </div>
-                <div>
+                <div class="opcion-radio">
                     <input type="radio" id="sexo_otro" name="sexo" value="otro">
                     <label for="sexo_otro">Otro</label>
                 </div>
             </fieldset>
-            <br>
-            <!-- Dirección -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="direccion">Dirección:</label>
-                <textarea id="direccion" name="direccion" rows="4" cols="30"></textarea>
+                <textarea id="direccion" name="direccion" rows="4"></textarea>
             </div>
-            <br>
-            <!-- Corregimiento -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="corregimiento">Corregimiento:</label>
                 <input type="text" id="corregimiento" name="corregimiento">
             </div>
-            <br>
-            <!-- Provincia -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="provincia">Provincia:</label>
                 <input type="text" id="provincia" name="provincia">
             </div>
-            <br>
-            <!-- País -->
-            <div>
+            
+            <div class="campo-formulario">
                 <label for="pais">País:</label>
                 <input type="text" id="pais" name="pais">
             </div>
-            <br>
-            <!-- Botón de envío -->
-            <div>
+            
+            <div class="campo-formulario">
                 <button type="submit">Enviar Datos</button>
             </div>
         </form>
-    </section>
-</main>
-<footer>
-    <hr>
-    <article>©2025. Todos los derechos reservados.</article>
-    <article>Fabian Atencio, William Rush | Ingeniería Web<article></article>
-    <a href="Index.html">Inicio |</a> <a href="MiBiografía_FAtencio.html">Biografía de F. Atencio | </a> <a href="MiBiografía_WRush.html">Biografía de W. Rush | </a> <a href="Sitios_Turísticos.html">Sitios Turísticos | </a> <a href="Curriculo.html">Formulario de Curriculo</a>
-</footer>
+    </main>
+
+    <footer>
+        <article>©2025. Todos los derechos reservados.</article>
+        <article>Fabian Atencio, William Rush | Ingeniería Web</article>
+    </footer>
+
+</body>
+</html>
