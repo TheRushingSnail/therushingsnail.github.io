@@ -3,28 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Biografía</title>
+    <title>Biografía de William Rush</title>
+    <link rel="stylesheet" href="Estilos/estilosDesktop.css">
+    <link rel="stylesheet" href="Estilos/encabezado.css">
+    <link rel="stylesheet" href="Estilos/piedepagina.css">
 </head>
 <body>
+    <header>
+        <h1>Proyecto de Ingeniería Web</h1>
+        <nav>
+            <ul>
+                <li><a href="Index.html">Inicio</a></li>
+                <li><a href="MiBiografía_FAtencio.html">Biografía F. Atencio</a></li>
+                <li><a href="MiBiografía_WRush.html">Biografía W. Rush</a></li>
+                <li><a href="Sitios_Turísticos.html">Sitios Turísticos</a></li>
+                <li><a href="Curriculo.html">Currículo</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <h1>William Rush</h1>
+        <nav>
+            <a href="#about_me">Sobre mí</a> | 
+            <a href="#books">Libros</a> | 
+            <a href="#movies">Películas</a> | 
+            <a href="#music">Música</a>
+        </nav>
 
-    <!-- 1. Nombre con Heading 1 -->
-    <h1>William Rush</h1>
-    <nav> <a href="#about_me">Sobre mí | </a> <a href="#books">Mis libros favoritos | </a> <a href="#movies">Mis películas favoritas | </a> <a href="#music">Canciones Favoritas</a> </nav>
-    <!-- 2. Dos párrafos sobre ti -->
-    <p>
-        Tengo 20 años. Estoy estudiando Ingeniería de Software en la Universidad Tecnológica de Panamá. Algunos de mis pasatiempos favoritos son dibujar, ver videos en el Internet, escuchar música, jugar y también diseñar juegos.
-    </p>
-    <p>
-        Mis metas principales son terminar mis estudios universitarios y completar mis proyectos personales.
-    </p>
+        <section id="about_me">
+            <h2>Sobre Mí</h2>
+            <p>Tengo 20 años. Estoy estudiando Ingeniería de Software en la Universidad Tecnológica de Panamá. Algunos de mis pasatiempos favoritos son dibujar, ver videos en el Internet, escuchar música, jugar y también diseñar juegos.</p>
+            <p>Mis metas principales son terminar mis estudios universitarios y completar mis proyectos personales.</p>
+            <img src="Imagenes/William.jpeg" alt="Una foto de William Rush" width="300">
+        </section>
 
-    <!-- 3. Imagen de ti mismo -->
-    <!-- Recuerda poner tu foto en la carpeta "imagenes" -->
-    <img src="Imagenes/William.jpeg" alt="Una foto mía" width="300">
-
-    <hr>
-
-    <!-- 4. Link a tu sitio web favorito -->
+ <!-- 4. Link a tu sitio web favorito -->
     <h2>Sitios Favoritos</h1>
     <p>
         <a href="https://www.youtube.com/" target="_blank">YouTube</a>
@@ -122,7 +136,7 @@
     <h2 id="movies">Mis películas favoritas</h2>
     
     <h3>Acción</h3> <!-- Título para el primer género -->
-    <ul>
+     <ul>
         <li><h3> Título: </h3> Spider-Man: Across the Spider-Verse</li>
         <h3> Directores:</h3> 
         <article>Joaquim Dos Santos, Kemp Powers, Justin K. Thompson</article>
@@ -216,11 +230,12 @@
     <!-- Para obtener este código, ve a YouTube, clic en Compartir > Incorporar y copia el código -->
     <iframe width="560" height="315" src="Videos/Chris Christodoulou - The Rain Formerly Known as Purple Risk of Rain 2 (2020).mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+    </main>
+
+    <footer>
+        <article>©2025. Todos los derechos reservados.</article>
+        <article>Fabian Atencio, William Rush | Ingeniería Web</article>
+    </footer>
+
 </body>
-<footer>
-    <hr>
-    <article>©2025. Todos los derechos reservados.</article>
-    <article>Fabian Atencio, William Rush | Ingeniería Web<article></article>
-    <a href="Index.html">Inicio |</a> <a href="MiBiografía_FAtencio.html">Biografía de F. Atencio | </a> <a href="MiBiografía_WRush.html">Biografía de W. Rush | </a> <a href="Sitios_Turísticos.html">Sitios Turísticos | </a> <a href="Curriculo.html">Formulario de Curriculo</a>
-</footer>
 </html>
